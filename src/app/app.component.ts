@@ -1,4 +1,7 @@
 import { Component } from "@angular/core";
+import { EvansgrayComponent } from "./projects/evansgray.component";
+import { KanbanComponent } from "./kanban.component";
+import { FrontendComponent } from "./frontend.component";
 
 @Component({
   selector: "app-root",
@@ -7,9 +10,9 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   slides = [
-    { component: evansgray },
-    { component: kanban },
-    { component: frontend }
+    { component: EvansgrayComponent },
+    { component: KanbanComponent },
+    { component: FrontendComponent }
   ];
   title = "portfolio";
 }
