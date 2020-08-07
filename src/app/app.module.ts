@@ -1,24 +1,24 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
+import { ProjectsModule } from "./projects/projects.module";
 import { AppRoutingModule } from "./app-routing.module";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
 import { AppComponent } from "./app.component";
-import { CarouselComponent } from "./slider/carousel.component";
-import { CarouselItemDirective } from "./slider/carousel-item.directive";
-import { EvansgrayComponent } from "./projects/evansgray.component";
-import { KanbanComponent } from "./kanban.component";
-import { FrontendComponent } from "./frontend.component";
+import { ResumeComponent } from "./resume/resume.component";
+import { ContactComponent } from "./contact/contact.component";
+
+const components = [ResumeComponent, ContactComponent, AppComponent];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CarouselComponent,
-    CarouselItemDirective,
-    EvansgrayComponent,
-    KanbanComponent,
-    FrontendComponent
+  declarations: [...components],
+  entryComponents: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ProjectsModule
   ],
-  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
