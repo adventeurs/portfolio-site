@@ -2,3 +2,24 @@
   width: 400px;
   height: 400px;
 }
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu {
+  background: white;
+  padding: 1px;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  .github {
+    height: 35px;
+  }
+}

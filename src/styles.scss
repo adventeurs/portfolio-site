@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap");
+
+$blue: #005de8;
+$red: #ea7070;
+$black: #121111;
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  color: $red;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+h3 {
+  color: $blue;
+}
+
+h5 {
+  color: $black;
+}
+
+p {
+  color: $black;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  background-color: $black;
+  height: 100vh;
+  justify-content: space-around;
+}
