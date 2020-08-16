@@ -1,10 +1,10 @@
 <div class="project">
-  <cdk-virtual-scroll-viewport itemSize="50">
+  <cdk-virtual-scroll-viewport itemSize="700" style="height: 100%">
     <div class="results">
       <div class="results fadeIn" *cdkVirtualFor="let project of projects">
         <ng-template [ngComponentOutlet]="project.component"></ng-template>
       </div>
     </div>
   </cdk-virtual-scroll-viewport>
-  <app-project-evansgray></app-project-evansgray>
+  <!-- <app-project-evansgray></app-project-evansgray> -->
 </div>

@@ -4,6 +4,7 @@ import { ProjectEvansgrayComponent } from "./project-evansgray/project-evansgray
 import { ProjectFrontendComponent } from "./project-frontend/project-frontend.component";
 import { ProjectKanbanComponent } from "./project-kanban/project-kanban.component";
 import { ProjectComponent } from "./project.component";
+import { ScrollingModule } from "@angular/cdk/scrolling";
 
 const components = [
   ProjectEvansgrayComponent,
@@ -14,7 +15,8 @@ const components = [
 
 @NgModule({
   declarations: [...components],
-  imports: [CommonModule],
-  exports: [...components]
+  imports: [CommonModule, ScrollingModule],
+  entryComponents: [...components],
+  exports: [...components, ScrollingModule]
 })
 export class ProjectsModule {}
